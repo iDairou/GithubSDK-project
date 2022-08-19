@@ -11,7 +11,7 @@ export default class GitHubSDK {
 			resolve(
 				this._fetch(options, `users/${this.user}`)
 					.then((data) => {
-						return data
+						return data;
 					})
 					.catch((err) => {
 						return err.ok;
@@ -26,7 +26,7 @@ export default class GitHubSDK {
 			resolve(
 				this._fetch(options, `repos/${this.user}/${repo}`)
 					.then((data) => {
-						return data
+						return data;
 					})
 					.catch((err) => {
 						return err.ok;
@@ -41,7 +41,7 @@ export default class GitHubSDK {
 			resolve(
 				this._fetch(options, `users/${this.user}/repos`)
 					.then((data) => {
-						return data
+						return data;
 					})
 					.catch((err) => {
 						return err.ok;
